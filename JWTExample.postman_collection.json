@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "09ff102a-9fab-4657-aa64-a91b0914b9e8",
+		"name": "JWTExample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32468569"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userName\":\"xule\",\"passWord\":\"ddd\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/JWTExample/common/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"JWTExample",
+						"common",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiMDEiLCJ1c2VyTmFtZSI6Inh1bGUiLCJleHAiOjE3MTQ5MTQ4MDcsImlhdCI6MTcxNDkxMzAwN30.ojCF78NLA-sU8L-Ii_l6aX7kBCjHE6EUX3y63udX-lg\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/JWTExample/testToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"JWTExample",
+						"testToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refreshToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiMDEiLCJ1c2VyTmFtZSI6Inh1bGUiLCJleHAiOjE3MTQ5MTYzNTgsImlhdCI6MTcxNDkxNDU1OH0.QU2YbanEfYevYPDFcd8ooyVmD8_UGyB5J9neTzOGB5E\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/JWTExample/common/refreshToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"JWTExample",
+						"common",
+						"refreshToken"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
